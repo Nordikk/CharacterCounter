@@ -1,0 +1,62 @@
+Karl Klammer: Der erste proaktive Office-Assistent
+
+Manche böse Zungen behaupteten, bei Karl Klammer und den anderen mit Office 97 eingeführten Assistenten hätte sich ein Praktikant austoben dürfen. Das trifft zwar bei dem Spiel Solitär zu, aber hinter den digitalen Helferlein, die doch so gerne Briefe schreiben wollten, steckte ein ambitioniertes Forschungsprojekt namens PERSONA.
+
+Angeleitet wurde das Team von Eric Horvitz, der heute noch bei Microsoft als Chief Scientific Officer tätig ist. Wenn also so viele kluge Köpfe und wohlmeinende Absichten dahinter steckten, warum scheiterte das Projekt so fulminant?
+
+Die Hilfe eines Computerprogramms kann man grob gesagt auf zwei Arten gestalten: Bei der passiven wartet der Agent – so werden digitale Assistenten in der Fachsprache genannt – auf Fragen des Nutzers; bei der proaktiven versucht der Agent, Situationen zu erkennen und gezielt sowie auf den Kontext bezogen Hilfe anzubieten.
+
+Die einfachste Form eines proaktiven Agenten ist die automatische Rechtschreibkorrektur, die nicht erkannte Wörter rot unterstreicht. Den Office-Assistent hat PERSONA als solch proaktiven Agenten entworfen. Mitte der Neunziger war die Textverarbeitung noch nicht in jedem Büro angekommen und Karl und seine Kumpels sollten neue Anwender an die überwältigende Funktionsvielfalt der Office-Suite heranführen.
+Microsoft
+
+Die berühmt-berüchtigte Frage nach dem Brief sorgte für viel Frust.
+
+Es blieb aber nicht bei den proaktiven Tipps wie der berüchtigten Frage, ob man einen Brief schreiben möchte. Damit die Hemmschwelle zur Nutzung der Hilfe nicht zu hoch war, bot der Office-Assistent an, mit natürlichen Sätzen die Office-Hilfe abzufragen. Mithilfe eines Modells auf Basis der Bayes’schen Statistik wurden sowohl Aktionen als auch Abfragen einem Kontext zugeordnet und Vorschläge angeboten. Bayes’sche Modelle erlangten später als Spam-Filter Bekanntheit.
+
+Die Interaktion zwischen Nutzer und Agent, also Karl Klammer, sollte ähnlich einem Gespräch zwischen zwei Menschen sein: durch Frage und Antwort. Auch, wenn man sich als Mensch abseits der Fragen meist nur per Multiple Choice ausdrücken durfte.
+Mehr Infos
+Karl Klammer: Warum der Office-Assistent scheiterte
+c't RETRO
+
+Dieser Artikel stammt aus c't-RETRO. In der Spezialausgabe der c't werfen wir einen Blick zurück auf die ersten IBM-PCs und beleuchten den Siegeszug von Windows. Sie finden darin Praxis, Tests und Storys rund um Technik-Klassiker. Wir erinnern an Karl Klammer, stellen einen neuzeitlichen IBM-XT-Nachbau fürs Vintage-Computing vor und erläutern, wie Sie Daten von verkratzten CDs und Uralt-Festplatten retten können. c't RETRO ist ab sofort im Heise Shop und am gut sortierten Zeitschriftenkiosk erhältlich.
+Metaphern und Regelbrüche
+
+Der zweite Ansatz, die Hemmschwelle zu senken, lag in der Gestaltung. Die Annahme war, dass Menschen unsicher sind, wie sie einen Computer bedienen sollen. Sie wissen aber, wie die Interaktion mit anderen Menschen funktioniert. Durch ein menschenähnliches Aussehen würden sie automatisch ein Schema parat haben, an dem die Nutzer ihr Verhalten ausrichten könnten. Bereits bei der gescheiterten Bedienoberfläche Microsoft Bob, bei der der Computer anhand eines digitalen Wohnzimmers bedient wurde, gab es den Versuch, mit Metaphern aus der realen Welt den Einstieg zu vereinfachen.
+
+An sich gute Ideen. Dumm nur, wenn Karl Klammer sich nicht an bekannte soziale Regeln hält. Ganz gleich, ob Butler oder Bürokollege: Wer einem nach wenigen Wörtern immer wieder dieselbe Frage stellt, verhält sich nicht konform mit allgemeinen zwischenmenschlichen Gepflogenheiten und erntet keine Sympathie. Manch einer wundert sich sogar, ob die arme Büroklammer nicht weniger Häme abbekommen hätte, wenn einfach nur die Frage nach dem Brief-Assistenten ersatzlos aus dem Repertoire des Office-Assistenten gestrichen worden wäre.
+
+Die Frage ist auch, wie groß das von Herrn Klammer identifizierte Problem des Briefschreibens war und wie sehr die angebotene Hilfe als hilfreich erschien. Selbst wenn man einen Brief schreiben wollte, war man von Hand meist schneller am Ziel. Denn bejahte man Karls Frage tatsächlich, öffnete die Büroklammer nur ein mausgraues Dialogfenster, das einem in mehreren Schritten zu einem normierten Brief führte. Und im Unterschied zu Aussortieren von Spam-Mails gehörten standardisierte Briefe nicht zu den Grundbedürfnissen der meisten Nutzer.
+
+Microsoft Chefforscher Horvitz gab später selbstkritisch zu bedenken, dass man etwas fahrlässig mit der Aufmerksamkeit der Nutzer umgegangen sei. Die Aufmerksamkeit sei eine knappe Ressource, die es mit Umsicht zu beanspruchen gelte. In seinem Folgeprojekt um die Jahrtausendwende versuchte er unter anderem mittels Sensoren und Verhaltensmodellen den richtigen Moment der Intervention zu identifizieren, um die Interaktion zwischen digitalem Assistent und menschlichem Nutzer konfliktarm zu gestalten.
+Anthropomorphes Aussehen und Psychologie
+
+Die Idee mit einem menschenähnlichen Aussehen das Eis in der Mensch-Maschine-Interaktion zu brechen, ist lobenswert. Es hat aber auch Nebenwirkungen. Das natürliche Aussehen kann arglose Nutzer dazu verleiten, in die Handvoll ausgebuffter Algorithmen, pfiffiger statistischer Modelle und niedlicher Pixelhaufen eine Tiefsinnigkeit hineinzuinterpretieren, die am Ende nur bitter enttäuscht werden kann.
+Microsoft
+
+Wem Karl Klammer nicht gefiel, konnte auch Katze, Hund, Magier und weitere Figuren als Office-Assistent auswählen.
+
+Die Menge an Intelligenz, die Anwender einer Büroklammer mit Augen zutrauten, hielt sich bei den meisten Office-Nutzern in engen Grenzen. Selbst wenn man die an Albert Einstein angelehnte Figur als Office-Assistenten gewählt hatte, dürften die Erwartungen an dessen intellektuelle Fähigkeiten im realistischen Maße geblieben sein.
+Fluchtreflexe und Wutausbrüche
+
+Hingegen dürfte ein psychologischer Effekt weniger bedacht worden sein und am Ende vielleicht erheblichen Anteil an den Richtung Karl Klammer gerichteten Wutausbrüchen gehabt haben: Menschen nehmen Bewegungen nicht nur vor den Augen wahr, sondern auch im peripheren Sichtbereich, also im Augenwinkel. Zudem sind wir in der Lage Gesichter sehr schnell zu erkennen und zu identifizieren.
+
+Aus evolutionstheoretischer Sicht ist beides wichtig, um Handlungen oder Akteure als friedlich oder feindlich einzustufen. Eine Fähigkeit, die unseren Vorfahren lange vor der Erfindung des Computers regelmäßig das Leben gerettet hat. Wenn aber im Augenwinkel Karl Klammer uns anlächelt oder gar animierte Sperenzchen veranstaltet, führt das unbewusst zu einer ständigen Ablenkung. Und so erklärt sich auch eine Gereiztheit mit und gegenüber dem Assistenten. Wenn sich dann die angebotene Hilfe wiederholt und einen nicht weiterbringt, ist die Unzufriedenheit natürlich groß.
+
+In einer Studie zeigte sich zudem, dass wenn sich Nutzer durch den digitalen Assistenten beobachtet fühlten, das Unbehagen stieg und sie die Aufgaben schlechter erfüllten. Für den Versuch wurde der Professor-Avatar des Office-Assistenten verwendet. Nimmt ein Assistent dem Nutzer das Gefühl von Autonomie, verstärkt das den Frust. Allgemein gibt es Hinweise dafür, dass digitale Assistenten Nutzern das Gefühl von Unselbstständigkeit vermitteln. Das ist vor allem der Fall, wenn die Agenten komplexe Arbeitsschritte nicht erklären, sondern die Aufgaben einfach übernehmen.
+
+Doch Karl Klammer entmündigte die Anwender auch ganz banal: Bei der Einführung ließ sich der Assistent ohne Weiteres nur verstecken, nicht gänzlich abschalten. Das ging erst mit Office 2000.
+Verschwunden und doch noch vorhanden
+
+Wie unbeliebt Karl Klammer, im Englischen Clippit oder umgangssprachlich Clippy, war, bewies eine Werbekampagne von Microsoft zur Einführung von Office XP. Ein zentraler Werbeslogan war das Fehlen der nervigen Klammer: „Clippy gets clipped". In drei eher tragischen als lustigen Filmchen wurde Karl Klammer brachial in Rente geschickt.
+Microsoft
+
+In der Werbekampagne zu Office XP endet Karl Klammer arbeitslos und biertrinkend in einer schummrigen Bar.
+
+Dabei machte Microsoft lediglich die Verstecken-Funktion zum Standard. Hartgesottene Fans der Office-Assistenten konnten diese bei entsprechender Sehnsucht in den Einstellungen wieder zum Leben erwecken. Auch viele der Hilfefunktionen, wie die natürlichsprachige Abfrage, blieben erhalten, waren nur nicht mehr an eine proaktive Comicfigur gebunden. Diese fand sich zumindest in der Form des Hündchens als Assistent bei der Suche von Windows XP wieder.
+
+Proaktive Assistenten sind durch Karls Scheitern nicht verschwunden, sondern lediglich dezenter gestaltet. Schnappt heutzutage eine solche Assistenz-Heuristik bei Office zu, etwa wenn Word etwas automatisch formatiert, dann erscheint nahe des Cursors ein kleiner Blitz, mit dem man die Aktion flugs wieder rückgängig machen kann. Und dank besserer Algorithmen und der Rechenkraft der Cloud sind Assistenten heute gegenwärtig und interagieren wie einst auf der Enterprise: durch Sprachein- und -ausgabe. Ob Cortana, der Google Assistant oder Siri: Sie stehen dem Nutzer zur Seite, aber ihnen fehlen Körper und Gesicht.
+Das kurze Revival von Karl Klammer als Sticker in Teams wusste Microsoft anscheinend schnell zu unterbinden.
+
+Das kurze Revival von Karl Klammer als Sticker in Teams wusste Microsoft anscheinend schnell zu unterbinden.
+
+Karl Klammer hatte übrigens im Frühjahr 2020 ein kurzes Revival, als Microsoft-Office-Entwickler ihn als Sticker-Set für Microsoft Teams auf GitHub veröffentlichten. Doch nach nur einem Tag wurde das Projekt wieder eingestampft und Clippy erneut verbannt. Die interne Markenabteilung versteht wohl in Sachen Karl Klammer keinen Spaß. Auf GitHub finden Fans der Büroklammer aber weiterhin ein Duplikat des Repositorys.
