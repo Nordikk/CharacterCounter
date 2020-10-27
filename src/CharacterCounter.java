@@ -10,7 +10,7 @@ import java.util.Map;
 
 public class CharacterCounter {
 
-	private Map<Character, Integer> countByCharacter = null; // auf null setzen, damit ich weiß, ob ich die HashMap schon initialisiert hab
+	private Map<Character, Integer> countByCharacter = new HashMap<>();
 
 	private String text = "";
 	
@@ -22,6 +22,8 @@ public class CharacterCounter {
 	public CharacterCounter(String fileName)
 	{
 		readAndOutputFileLineByLine(fileName);
+		
+		countCharacters();
 	}
 	
 	private void readAndOutputFileLineByLine(String fileName) {
@@ -37,8 +39,6 @@ public class CharacterCounter {
 	
 	public void showCharactersCount()
 	{
-		countCharacters();
-		
 		System.out.println(String.format("Der Text hat %d Zeichen. ", text.length()));
 		
 		for(Character character : countByCharacter.keySet())
@@ -49,9 +49,7 @@ public class CharacterCounter {
 	}
 	
 	public void showCharactersCountPercentage()
-	{
-		countCharacters();
-		
+	{		
 		float consonantsPercent = (float)consonantsCount / text.length() * 100;
 		float vowelsPercent = (float)vowelsCount / text.length() * 100;
 		float umlautsPercent = (float)umlautsCount / text.length() * 100;
@@ -65,12 +63,7 @@ public class CharacterCounter {
 	}
 	
 	private void countCharacters()
-	{
-		if(countByCharacter != null) // ist schon initialisiert und gefüllt mit Werten
-			return;
-		
-		countByCharacter = new HashMap<>();
-		
+	{		
 		for(Character character : text.toCharArray())
 		{
 			if(!countByCharacter.containsKey(character))
@@ -139,7 +132,6 @@ public class CharacterCounter {
 		characterCounter.showCharactersCount();
 	
 		characterCounter.showCharactersCountPercentage();
-		
 	}
 
 }
