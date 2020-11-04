@@ -18,7 +18,6 @@ public class CharacterCounter {
 	
 	static {
 		VOWELS.add('a');
-		VOWELS.add('a');
 		VOWELS.add('A');
 		VOWELS.add('e');
 		VOWELS.add('E');
@@ -160,7 +159,7 @@ public class CharacterCounter {
 		String fileName = args[0];
 
 		CharacterCounter characterCounter = new CharacterCounter(fileName);
-
+		
 		characterCounter.showCharactersCount();
 	
 		characterCounter.showCharactersCountPercentage();
