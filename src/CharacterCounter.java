@@ -11,8 +11,34 @@ import java.util.Map;
 public class CharacterCounter {
 
 	private Map<Character, Integer> countByCharacter = new HashMap<>();
+	private Map<String, Integer> countByWord = new HashMap<>();
+	
+	private static final List<Character> VOWELS = new ArrayList<>();
+	private static final List<Character> UMLAUTS = new ArrayList<>();
+	
+	static {
+		VOWELS.add('a');
+		VOWELS.add('a');
+		VOWELS.add('A');
+		VOWELS.add('e');
+		VOWELS.add('E');
+		VOWELS.add('i');
+		VOWELS.add('I');
+		VOWELS.add('o');
+		VOWELS.add('O');
+		VOWELS.add('u');
+		VOWELS.add('U');
+		
+		UMLAUTS.add('ä');
+		UMLAUTS.add('Ä');
+		UMLAUTS.add('ö');
+		UMLAUTS.add('Ö');
+		UMLAUTS.add('ü');
+		UMLAUTS.add('Ü');
+	}
 
-	private String text = "";
+	private String text;
+	private String[] words;
 	
 	private int consonantsCount = 0;
 	private int vowelsCount = 0;
@@ -24,6 +50,26 @@ public class CharacterCounter {
 		readAndOutputFileLineByLine(fileName);
 		
 		countCharacters();
+		
+		countWords();
+	}
+	
+	private static boolean isConsonant(Character character)
+	{
+		// auf Buchstaben ist Ordnung definiert (https://www.ascii-code.com/)
+		return !isVowel(character) && 
+				((character >= 'a' && character <= 'z') 
+				|| (character >= 'A' && character <= 'Z'));
+	}
+	
+	private static boolean isVowel(Character character)
+	{
+		return VOWELS.contains(character);
+	}
+	
+	private static boolean isUmlaut(Character character)
+	{
+		return UMLAUTS.contains(character);
 	}
 	
 	private void readAndOutputFileLineByLine(String fileName) {
@@ -34,6 +80,43 @@ public class CharacterCounter {
 			}
 		} catch (IOException e) { // Fehler beim Lesen aufgetreten
 			e.printStackTrace(); // Fehler in Konsole ausgeben
+		}
+	}
+	
+	private void countCharacters()
+	{		
+		for(Character character : text.toCharArray())
+		{
+			if(!countByCharacter.containsKey(character))
+				countByCharacter.put(character, 0);
+				
+			int count = countByCharacter.get(character).intValue();
+			
+			countByCharacter.put(character, ++count);
+			
+			if(isConsonant(character))
+				consonantsCount++;
+			else if(isVowel(character))
+				vowelsCount++;
+			else if(isUmlaut(character))
+				umlautsCount++;
+			else
+				otherCharactersCount++; // ß ist auch ein sonstiges Zeichen
+		}
+	}
+	
+	private void countWords()
+	{
+		words = text.split("[.,:;!? \n]+");
+		
+		for(String word : words)
+		{
+			if(!countByWord.containsKey(word))
+				countByWord.put(word, 0);
+				
+			int wordCount = countByWord.get(word).intValue();
+			
+			countByWord.put(word, ++wordCount);
 		}
 	}
 	
@@ -62,66 +145,15 @@ public class CharacterCounter {
 		System.out.println(String.format("Sonstige Zeichen kommen zu %.2f%% vor", otherCharactersPercent));
 	}
 	
-	private void countCharacters()
-	{		
-		for(Character character : text.toCharArray())
+	public void showWordsCount()
+	{
+		System.out.println(String.format("Der Text hat %d Wörter. ", words.length));
+		
+		for(String word : countByWord.keySet())
 		{
-			if(!countByCharacter.containsKey(character))
-				countByCharacter.put(character, 0);
-				
-			int count = countByCharacter.get(character).intValue();
-			
-			countByCharacter.put(character, ++count);
-			
-			if(isConsonant(character))
-				consonantsCount++;
-			else if(isVowel(character))
-				vowelsCount++;
-			else if(isUmlaut(character))
-				umlautsCount++;
-			else
-				otherCharactersCount++; // ß ist auch ein sonstiges Zeichen
+			String out = String.format("Wort %s kommt %d mal vor. ", word, countByWord.get(word));
+			System.out.println(out);
 		}
-	}
-	
-	private boolean isConsonant(Character character)
-	{
-		// auf Buchstaben ist Ordnung definiert (https://www.ascii-code.com/)
-		return !isVowel(character) && 
-				((character >= 'a' && character <= 'z') 
-				|| (character >= 'A' && character <= 'Z'));
-	}
-	
-	private boolean isVowel(Character character)
-	{
-		List<Character> vowels = new ArrayList<>();
-		// aeiou
-		vowels.add('a');
-		vowels.add('A');
-		vowels.add('e');
-		vowels.add('E');
-		vowels.add('i');
-		vowels.add('I');
-		vowels.add('o');
-		vowels.add('O');
-		vowels.add('u');
-		vowels.add('U');
-		
-		return vowels.contains(character);
-	}
-	
-	private boolean isUmlaut(Character character)
-	{
-		List<Character> umlauts = new ArrayList<>();
-		// äöü
-		umlauts.add('ä');
-		umlauts.add('Ä');
-		umlauts.add('ö');
-		umlauts.add('Ö');
-		umlauts.add('ü');
-		umlauts.add('Ü');
-		
-		return umlauts.contains(character);
 	}
 	
 	public static void main(String[] args) {
@@ -132,6 +164,8 @@ public class CharacterCounter {
 		characterCounter.showCharactersCount();
 	
 		characterCounter.showCharactersCountPercentage();
+		
+		characterCounter.showWordsCount();
 	}
 
 }
