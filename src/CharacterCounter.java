@@ -28,12 +28,12 @@ public class CharacterCounter {
 		VOWELS.add('u');
 		VOWELS.add('U');
 		
-		UMLAUTS.add('ä');
-		UMLAUTS.add('Ä');
-		UMLAUTS.add('ö');
-		UMLAUTS.add('Ö');
-		UMLAUTS.add('ü');
-		UMLAUTS.add('Ü');
+		UMLAUTS.add('Ã¤');
+		UMLAUTS.add('Ã„');
+		UMLAUTS.add('Ã¶');
+		UMLAUTS.add('Ã–');
+		UMLAUTS.add('Ã¼');
+		UMLAUTS.add('Ãœ');
 	}
 
 	private String text;
@@ -100,7 +100,7 @@ public class CharacterCounter {
 			else if(isUmlaut(character))
 				umlautsCount++;
 			else
-				otherCharactersCount++; // ß ist auch ein sonstiges Zeichen
+				otherCharactersCount++; // ÃŸ ist auch ein sonstiges Zeichen
 		}
 	}
 	
@@ -146,7 +146,7 @@ public class CharacterCounter {
 	
 	public void showWordsCount()
 	{
-		System.out.println(String.format("Der Text hat %d Wörter. ", words.length));
+		System.out.println(String.format("Der Text hat %d WÃ¶rter. ", words.length));
 		
 		for(String word : countByWord.keySet())
 		{

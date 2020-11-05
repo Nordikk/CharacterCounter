@@ -1,3 +1,4 @@
 *.class
 *.prefs
 .DS_Store
+/bin/
